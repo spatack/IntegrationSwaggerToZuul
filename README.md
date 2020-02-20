@@ -10,7 +10,7 @@ swagger:
   base-package: com.example.controller   
 3.在启动类添加注解  
 @EnableSwagger2Doc   
-4.添加微服务文档路径  
+4.在网关添加一个配置类  
 见swagger文件夹下的DocumentConfig   
 
 这个配置缺点：虽然能从网关直接访问到其他微服务的接口文档，但还不能动态获取。   
