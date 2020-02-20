@@ -3,11 +3,7 @@
 
 1.添加依赖  
 网关和其他微服务都要  
-<dependency>  
-    <groupId>com.spring4all</groupId>  
-    <artifactId>spring-boot-starter-swagger</artifactId>  
-    <version>1.5.1.RELEASE</version>  
-</dependency>  
+[spring-boot-starter-swagger](https://mvnrepository.com/artifact/com.spring4all/spring-boot-starter-swagger/1.5.1.RELEASE)  
 2.配置扫包  
 在需要生成swagger文档的微服务的配置文件添加扫包  
 swagger:  
