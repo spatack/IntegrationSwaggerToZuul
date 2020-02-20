@@ -1,0 +1,2 @@
+# IntegrationSwaggerToZuul
+将swagger整合到网关zuul
