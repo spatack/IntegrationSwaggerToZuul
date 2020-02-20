@@ -1,2 +1,21 @@
 # IntegrationSwaggerToZuul
 将swagger整合到网关zuul
+
+1.添加依赖 
+网关和其他微服务都要
+<dependency>
+    <groupId>com.spring4all</groupId>
+    <artifactId>spring-boot-starter-swagger</artifactId>
+    <version>1.5.1.RELEASE</version>
+</dependency> 
+2.配置扫包 
+在需要生成swagger文档的微服务的配置文件添加扫包
+swagger:
+  base-package: com.example.controller 
+3.在启动类添加注解 
+@EnableSwagger2Doc 
+4.添加微服务文档路径
+见swagger文件夹下的DocumentConfig 
+
+这个配置缺点：虽然能从网关直接访问到其他微服务的接口文档，但还不能动态获取。 
+还有就是 版本较老 ，2017年后就没更新了。
